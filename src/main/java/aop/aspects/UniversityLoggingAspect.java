@@ -1,6 +1,7 @@
 package aop.aspects;
 
 import aop.Student;
+import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
 import org.springframework.stereotype.Component;
 
@@ -30,9 +31,11 @@ public class UniversityLoggingAspect {
 //    public void afterThrowingGetStudentsLoggingAdvice(Throwable exception) {
 //        System.out.println("afterThrowingGetStudentsLoggingAdvice : логируем исключение " + exception );
 //    }
-    @After("execution(* getStudents())")
-    public void afterGetStudentsLoggingAdvice() {
-        System.out.println("afterGetStudentsLoggingAdvice: логируем завершение работы метода getStudents");
-    }
+//    @After("execution(* getStudents())")
+//    public void afterGetStudentsLoggingAdvice() {
+//        System.out.println("afterGetStudentsLoggingAdvice: логируем завершение работы метода getStudents");
+//    }
+
+
 }
 
